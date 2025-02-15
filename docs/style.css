@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Julius+Sans+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Julius+Sans+One&family=Xanh+Mono:ital@0;1&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: absolute;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+}
+
+#logoImg {
+    position: absolute;
+    width: 170px;
+    height: 170px;
+    left: 50%;  
+    top: 10px;
+    transform: translateX(-50%); 
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 6%
+}
+
+nav li {
+    font-family: 'Julius Sans One';
+    font-size: 1.5rem;
+    font-weight: 200;
+    display: inline-block;
+}
+
+.leftNavEle {
+    margin-right: 100px;
+}
+
+.rightNavEle {
+    margin-left: 100px;
+}
+
+.navListSpacerRight {
+    margin-right: 25px;
+    margin-left: 60px;
+}
+
+.navListSpacerLeft {
+    margin-left: 25px;
+    margin-right: 60px;
+}
+
+#landingPage {
+    position: absolute;
+    display: flex;
+    top: 30vh;
+    width: 100vw;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#landingPage h1 {
+    margin-bottom: 25vh;
+    font-size: 5rem;
+    font-family: 'Xanh Mono';
+    letter-spacing: 2px;
+    font-weight: 100;
+    white-space: nowrap;
+    border-right: 4px solid black;
+    
+}
+
+#downArrow {
+    position: absolute;
+    margin-top: 250px;   
+    width: 50px
+}

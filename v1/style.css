@@ -3,6 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Julius+Sans+One&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Julius+Sans+One&family=Xanh+Mono:ital@0;1&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -73,6 +76,8 @@ nav li {
     font-weight: 100;
     white-space: nowrap;
     border-right: 4px solid black;
+    color: rgb(39, 39, 39);
+
     
 }
 
@@ -80,4 +85,40 @@ nav li {
     position: absolute;
     margin-top: 250px;   
     width: 50px
+}
+
+/* About me */
+
+#aboutmePage {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top:100vh;
+    
+}
+
+#aboutmePage h1 {
+    font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 5rem;
+    font-weight: 600;
+    color: rgb(71, 71, 71);
+    letter-spacing: -3.5px;
+    padding-left:200px;
+    padding-top: 75px;
+}
+
+#aboutmePage h2{
+    font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+    padding-left: 200px;
+}
+
+#aboutmePage p {
+    font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: rgb(71, 71, 71);
+    padding-left: 200px;
 }

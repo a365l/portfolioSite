@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 nav {
@@ -40,6 +41,15 @@ nav li {
     display: inline-block;
 }
 
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
 .leftNavEle {
     margin-right: 100px;
 }
@@ -55,14 +65,14 @@ nav li {
 
 .navListSpacerLeft {
     margin-left: 25px;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 #landingPage {
     position: absolute;
     display: flex;
     top: 30vh;
-    width: 100vw;
+    width: 100%;
     height: 70vh;
     justify-content: center;
     align-items: center;
@@ -91,7 +101,7 @@ nav li {
 
 #aboutmePage {
     position: absolute;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     top:100vh;
     
@@ -104,7 +114,7 @@ nav li {
     color: rgb(71, 71, 71);
     letter-spacing: -3.5px;
     padding-left:200px;
-    padding-top: 75px;
+    padding-top: 45px;
 }
 
 #aboutmePage h2{
@@ -115,6 +125,19 @@ nav li {
     padding-left: 200px;
 }
 
+#aboutmePage span {
+    font-size: 3rem;
+    margin-left: 15px;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 1,
+  'opsz' 24
+}
+
 #aboutmePage p {
     font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 1.5rem;
@@ -122,3 +145,14 @@ nav li {
     color: rgb(71, 71, 71);
     padding-left: 200px;
 }
+
+#websiteservicesPage {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 200vh;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+

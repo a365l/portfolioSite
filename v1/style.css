@@ -146,6 +146,41 @@ nav a:hover {
     padding-left: 200px;
 }
 
+#myprojectsButton {
+    text-decoration: none;
+    padding: 5px 20px;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    font-family: 'jost';
+    font-weight: 800;
+    border-radius: 25px;
+    right:0;
+    bottom: 75px;
+    margin-right: 125px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+}
+
+#myprojectsButton span {
+    color: rgb(189, 192, 206);
+    display: inline-block;
+    transform: scale(0.7);
+ 
+    
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 40
+}
+
+
+
+ /* Website Services */
 #websiteservicesPage {
     position: absolute;
     display: flex;

@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=home_pin" />
         <script src="script.js" defer></script> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alfred Leigh | Portfolio Home</title>
@@ -13,12 +14,12 @@
         <nav>
             <a href="index.html"><img alt="logo" src="./assets/logo.png" id="logoImg"></a>
             <ul class="leftNavEle">
-                <li>About me</li>
-                <li class="navListSpacerLeft">My Projects</li>
+                <li><a href="./index.html#aboutmePage">About me</a></li>
+                <li class="navListSpacerLeft"><a href="index.html#websiteservicesPage">website services</a></li>
             </ul>
             <ul class="rightNavEle">
-                <li class="navListSpacerRight">Contact me</li>
-                <li>My Resume</li>
+                <li class="navListSpacerRight"><a href="index.html#contactmePage">Contact me</a></li>
+                <li><a href="index.html#myresumePage"></a>My Resume</a></li>
             </ul>
         </nav>
 
@@ -29,12 +30,40 @@
             </div> 
             <div id="aboutmePage">
                 <h1>about.</h1>
-                <h2>I'm a student residing in London, Great Britain.</h2>
-                <p>Born in the 2010s, my fascination with technology ignited at a young age.<br> At nine, I delved into C++ programming, laying the foundation for my coding journey.<br> By ten, I had embraced Python, expanding my programming repertoire.<br> The following year, I ventured into web development, educating my self on HTML and CSS.<br> At twelve, I explored mobile app development grasping the basics of Kotlin.<br> My newley unlocked technical skillset allowed me to pursue personal projects,<br>encompassing proficiency in a multitude of sectors. (linux systems, embedned systems, pentesting, server manegment) reflecting my commitment to cybersecurity.<br></p>
+                <h2>I'm a student residing in London, Great Britain.<span class="material-symbols-outlined">home_pin</span></h2>
+
+                
+                    
+                <p>Born in the 2010s, my fascination with technology ignited at a young age.<br> At nine, I delved into C++ programming, laying the foundation for my coding journey.<br> By ten, I had embraced Python, expanding my programming repertoire.<br> The following year, I ventured into web development, educating my self on HTML and CSS.<br> At twelve, I explored mobile app development grasping the basics of Kotlin.<br> My newley unlocked technical skillset allowed me to pursue personal projects,<br>encompassing proficiency in a multitude of sectors including: <br>- linux systems, embedned systems, pentesting and server manegment - <br>reflecting my commitment to cybersecurity.<br></p>
                 <!--
                 <p>Born in 2010s, I have always been facinated by technology.<br>
                 Dating back to when I was just nine years old, I had always been a computer wizz.
                 </p>-->
+                <a id="myprojectsButton">See My Projects</a>
+            </div>
+
+            <div id="websiteservicesPage">
+                <div id="packagesContainer">
+                    <h1>Website Services</h1>
+                    <h3>Proffesional websites at affordable costs.</h2>
+                    <p>I'm an independant hobbiest looking to build my portfolio...<br>In simple terms, I will do my best to create a Proffesional website, <br>all the while keeping prices low - just the opportunity to make your sites is worth more to me than the money!<br>Im building my resume, and helping you create your websites<br>Win - Win!</p>
+                    
+                    <div class="packageContainer" id="package1">
+                        <h1>Launchpad Package</h1>
+                        <h2>💡 For: Simple informational websites (portfolio, small business, blog, etc.).</h2>
+                    </div>
+                    <div class="packageContainer" id="package2">
+                        <h1>Power Site Package</h1>
+                        <h2>💡 For: More advanced websites with interactive features like booking systems</h2>
+                    </div>
+                    <div class="packageContainer" id="package3">
+                        <h1>Seller Boss</h1>
+                        <h2>💡 For: Full e-commerce websites that sell products.</h2>
+                    </div>
+
+                    <h1>No fuss, pay me when it's done</h1>
+                    <h2>Give me and idea of what your looking for, I'll make it happen<br>If you like what you see - it will be yours, If you don't - no worries.</h2>
+                </div>
             </div>
         </main>
     </body>

@@ -125,8 +125,9 @@ nav a:hover {
     padding-left: 200px;
 }
 
-#aboutmePage span {
-    font-size: 3rem;
+#home_icon {
+    width: 50px;
+    height: 50px;
     margin-left: 15px;
 }
 
@@ -146,25 +147,34 @@ nav a:hover {
     padding-left: 200px;
 }
 
+#profileImg {
+    float: right;
+    border-radius: 50%;
+    max-width: 250px;
+    height: auto;
+    margin-top: 2.5%;
+    transform: translateX(-5vw);
+}
+
 #myprojectsButton {
     text-decoration: none;
     padding: 5px 20px;
     background-color: rgb(39, 39, 39);
     color: white;
-    font-family: 'jost';
-    font-weight: 800;
     border-radius: 25px;
     right:0;
     bottom: 75px;
-    margin-right: 125px;
+    margin-right: 300px;
     position: absolute;
     display: flex;
     align-items: center;
 }
 
 #myprojectsButton span {
+    font-size: 2rem;
     color: rgb(189, 192, 206);
     display: inline-block;
+    overflow-y: hidden;
     transform: scale(0.7);
  
     

@@ -1,5 +1,5 @@
 const textArray = ["Programmer. ", "UX Desinger. ", "Pentester. ", "Embedded Developer. "];
-const fonts = ["Xanh Mono", "Courier Prime", "Monospace"]
+const fonts = ["Xanh Mono", "Courier Prime"]
 let currentIndex = 0;
 let charIndex = 0;
 let isDeleting = false;

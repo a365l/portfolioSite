@@ -51,7 +51,7 @@ nav {
 @media (hover: hover) {
     /* Hover-specific styles */
     #logoImg:hover {
-      width: 100px;
+      
     }
   }
 

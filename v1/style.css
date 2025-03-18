@@ -6,10 +6,27 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
 * {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+}
+
+b {
+    font-weight: 400;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.spacer {
+    border-bottom: 1.5px solid rgb(71, 71, 71); 
+    width: 80%;
+    margin: auto;
 }
 
 nav {
@@ -28,6 +45,15 @@ nav {
     top: 10px;
     transform: translateX(-50%); 
 }
+
+/* fix this media query makes it only apply on device with cursor so no bug on mobile*/
+
+@media (hover: hover) {
+    /* Hover-specific styles */
+    #logoImg:hover {
+      width: 100px;
+    }
+  }
 
 nav ul {
     list-style: none;
@@ -107,7 +133,7 @@ nav a:hover {
     
 }
 
-#aboutmePage h1 {
+.aboutH1 {
     font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
     font-size: 5rem;
     font-weight: 600;
@@ -116,6 +142,8 @@ nav a:hover {
     padding-left:200px;
     padding-top: 45px;
 }
+
+
 
 #aboutmePage h2{
     font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
@@ -193,11 +221,157 @@ nav a:hover {
  /* Website Services */
 #websiteservicesPage {
     position: absolute;
+    top: 215vh;
     display: flex;
     justify-content: center;
-    top: 200vh;
+    /*background: linear-gradient(to top, rgba(158, 200, 255, 75) 50%, #ffffff 100%);   */ 
     text-align: center;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
+#websiteservicesPageHeader  {
+    font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 5rem;
+    font-weight: 300;
+    color: rgb(71, 71, 71);
+    letter-spacing: -3.5px;
+    transform: translateY(-2vh);
+}
+
+#websiteservicesPage h3 {
+    font-family: "jost", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+    font-size: 2.25rem;
+    font-weight: 300;
+    color: rgb(71, 71, 71);
+    transform: translateY(-5vh);
+}
+
+#websiteservicesPage p {
+    font-family: 'nunito';
+}
+
+#packageContainer {
+    margin-top:20px;
+    display: inline-flex;
+}
+
+.packages {
+    width:33vw;
+    box-shadow: 0 0 2px rgba(71, 71, 71, 1);
+}
+
+.packages span {
+    float: left;
+    margin-left: 10px;
+    font-family: 'julius sans one';
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(71, 71, 71)
+}
+
+.packages h1 {
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Jost';
+    color: rgb(35, 39, 49);
+    font-weight: 525;
+}
+
+.packages p {
+    font-family: 'nunito';
+    font-weight: 600;
+    font-size: 1.2rem; 
+    padding: 0 15px;
+}
+
+#packagesIconsContainer {
+    width: 100%;
+    margin-top: 5px;
+    justify-content: center;
+    display: inline-flex;
+}
+
+#packagesIconsContainer img {
+    height: auto;
+    width: 100px;
+    margin-top: 5vh;
+    margin-left: 13vw;
+    margin-right: 13vw;
+    position: relative;
+}
+
+#websiteservicesPageInfo {
+    margin: 0;
+    padding: 0;
+    transform: translateX(-15%);
+}
+
+#paragraphWebPackages {
+    font-size: 1.25rem;
+}
+
+/* conact me page */
+
+#contactmePage {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 315vh;
+    overflow-y: hidden;
+}
+
+#contactmePage img {
+    margin: 50px auto;
+    display: block;
+    width: 50px;
+    height: auto;
+}
+
+#contactmePage h1 {
+    text-align: center;
+    font-family: 'jost', 'Helvetica';
+    font-weight: 400;
+    color: rgb(71, 71, 71);
+    font-size: 2.7rem;
+    margin-top: -40px;
+}
+
+#contactmePage h2 {
+    text-align: center;
+    font-family: 'Jost', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 1.2rem;
+    color: rgb(39, 39, 39);
+}
+
+#contactmePageBlockContainer {
+    width: 100%;
+    margin-top: 1%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+#contactmePageBlockContainer h3 {
+    font-weight: 600;
+    font-family: 'jost';
+    font-size: 1.25rem;
+}
+
+#contactmePageBlockContainer p {
+    font-family: 'courier prime';
+}
+
+.contactmePageBlock { 
+    border: 2px solid rgba(71, 71, 71, 0.2);
+    border-radius: 15px;
+    margin: 25px;
+    padding: 50px;
+}
+
+.contactmePageBlockIcon {
+    border: 2px solid rgba(71, 71, 71, 0.2);
+    padding: 5px;
+    border-radius: 12.5px;
+}

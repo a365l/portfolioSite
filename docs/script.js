@@ -10,29 +10,43 @@ function typeWriter() {
   const currentText = textArray[currentIndex];
   
   if (isDeleting) {
-    // Deleting characters
     outputElement.innerHTML = currentText.substring(0, charIndex);
     charIndex--;
 
     if (charIndex === 0) {
       isDeleting = false;
-      currentIndex = (currentIndex + 1) % textArray.length; // Cycle through words
+      currentIndex = (currentIndex + 1) % textArray.length; 
       outputElement.style.fontFamily = fonts[currentIndex];
     }
   } else {
-    // Typing characters
     outputElement.innerHTML = currentText.substring(0, charIndex);
     charIndex++;
 
     if (charIndex === currentText.length) {
-      // Wait a moment after typing, then start deleting
       isDeleting = true;
-      setTimeout(typeWriter, 1000); // Delay before starting to delete
+      setTimeout(typeWriter, 1000); 
       return;
     }
   }
 
-  setTimeout(typeWriter, speed); // Continue typing/deleting
+  setTimeout(typeWriter, speed); 
 }
 
-typeWriter(); // Start the typewriter effect
+typeWriter(); 
+
+let backToTopBtn = document.getElementById("backToTopBtn");
+
+window.onscroll = function() {
+  if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+    backToTopBtn.style.opacity = "0.75";
+  } else {
+    backToTopBtn.style.opacity = "0";
+  }
+};
+
+backToTopBtn.addEventListener("click", function() {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth" 
+  });
+});

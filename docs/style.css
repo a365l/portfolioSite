@@ -53,7 +53,7 @@ b {
 nav {
     position: absolute;
     width: 100vw;
-    height: 30vh;
+    height: 35vh;
     display: flex;
     justify-content: center;
 }
@@ -64,6 +64,7 @@ nav {
     height: 170px;
     left: 50%;  
     top: 10px;
+    z-index: 9999;
     transform: translateX(-50%); 
 }
 
@@ -114,10 +115,6 @@ nav a {
     color: black;
 }
 
-nav a:hover {
-    text-decoration: underline;
-}
-
 .leftNavEle {
     margin-right: 100px;
 }
@@ -136,10 +133,54 @@ nav a:hover {
     margin-right: 100px;
 }
 
+@media screen and (max-width: 1024px) {
+    .navListSpacerLeft {
+        margin-right: 30px;
+    }
+
+    .navListSpacerRight {
+        margin-left: 30px;
+    }
+
+    nav ul {
+        margin-top: 8%;
+    }
+
+
+  }
+
+#backToTopBtn {
+    transition: all 0.5s;
+    opacity: 0;
+    position: fixed;
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    margin: 15px;
+    border: none; 
+    outline: none; 
+    background-color: rgb(68, 83, 156);
+    color: white;
+    cursor: pointer; 
+    padding: 25px; 
+    border-radius: 30px; 
+    font-size: 18px; 
+    font-family: 'raleway';
+  }
+  
+  #backToTopBtn:hover {
+    background-color: #643ca4; 
+    transition: all 0.5s;
+    border-radius: 25px;
+    padding: 27.5px;
+  }
+  
+
 #landingPage {
     position: absolute;
     display: flex;
     top: 30vh;
+    z-index: 500;
     width: 100%;
     height: 70vh;
     justify-content: center;
@@ -224,6 +265,24 @@ nav a:hover {
     height: auto;
     margin-top: 2.5%;
     transform: translateX(-5vw);
+}
+
+@media screen and (max-width: 1010px) {
+    #profileImg {
+        max-width: 200px;    
+    }
+
+    #aboutmePage p {
+        height: auto;
+    }
+
+    #aboutmePage {
+        height: auto;
+    }
+
+    #websiteservicesPage {
+        top:230vh;
+    }
 }
 
 #myprojectsButton {
@@ -315,9 +374,10 @@ nav a:hover {
 .packages h1 {
     margin-top: 50px;
     text-align: center;
-    font-family: 'inter','jost';
+    font-family: 'raleway','jost';
     font-weight: 600;
-    color: rgb(35, 39, 49);
+    color: rgb(60, 70, 116);
+    /*color: rgb(35, 39, 49);*/
     font-weight: 450;
 }
 
@@ -362,6 +422,12 @@ nav a:hover {
     position: absolute;
     top: 315vh;
     overflow-y: hidden;
+}
+
+@media screen and (max-width: 1075px) {
+    #contactmePage {
+        top:335vh;
+    }
 }
 
 #contactmePage img {
@@ -412,6 +478,13 @@ nav a:hover {
     border-radius: 15px;
     margin: 25px;
     padding: 50px;
+    transition: all 1s;
+}
+
+.contactmePageBlock:hover {
+    padding: 55px;
+    font-size: 1.25rem;
+    transition: all 1s;
 }
 
 .contactmePageBlockIcon {
